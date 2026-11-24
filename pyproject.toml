@@ -1,0 +1,26 @@
+[project]
+name = "project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ikromov247", email = "sukhrob.ikromov0@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "bm3d>=4.0.3",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.5",
+    "opencv-python>=5.1.0.95",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
+]
+
+[project.scripts]
+project = "project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
