@@ -4,23 +4,23 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "Ikromov247", email = "sukhrob.ikromov0@gmail.com" }
+    { name = "Sukhrob Ikromov", email = "sukhrob.ikromov0@gmail.com" }
 ]
 requires-python = ">=3.14"
 dependencies = [
     "bm3d>=4.0.3",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "lmdb>=3.0.0",
     "matplotlib>=3.11.2",
     "numpy>=2.5.5",
     "opencv-python>=5.1.0.95",
-    "scikit-learn>=1.9.1",
-    "scipy>=1.18.1",
-    "torch>=2.15.0",
-    "torchvision>=0.29.2",
+    "scikit-image>=0.26.0",
 ]
 
 [project.scripts]
-project = "project:main"
+denoising-cmpt819 = "project:main"
 
 [build-system]
-requires = ["uv_build>=0.13.5,<0.14.0"]
+requires = ["uv_build>=0.13.6,<0.14.0"]
 build-backend = "uv_build"
